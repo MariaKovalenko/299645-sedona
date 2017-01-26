@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Sedona</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <img src="http://logo.png/67x56" width="67" height="56" alt="Логотип">
+        <nav class="main-navigation">
+          <ul>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Фото и видео</a>
+            </li>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li class="active">
+              <a href="#">Гостиницы</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main class="container">
+      <form class="filters" action="#">
+        <div class="checkbox-left">
+          <h3 class="white">Инфраструктура:</h3>
+          <label><input type="checkbox" checked>Бассейн</label>
+          <label><input type="checkbox">Парковка</label>
+          <label><input type="checkbox">Wi-Fi</label>
+        </div>
+        <div class="checkbox-left">
+          <h3 class="white">Тип жилья</h3>
+          <label><input type="checkbox" checked>Гостиница</label>
+          <label><input type="checkbox" checked>Мотель</label>
+          <label><input type="checkbox" checked>Апартаменты</label>
+        </div>
+        <div class="range">
+          <h3 class="white">Стоимость в сутки(Р):</h3>
+          <p class="white">От 0 до 30000</p>
+          <input type="range" min="0" max="3000" step="1" value="2500">
+        </div>
+        <input type="submit" value="Показать">
+      </form>
+      <div class="result">
+        <h2>Найдено 3</h2>
+        <section class="sorting">
+          <h4>Сортировка:</h4>
+          <ul>
+            <li class="current">
+              <a href="#">По цене</a>
+            </li>
+            <li>
+              <a href="#">По типу</a>
+            </li>
+            <li>
+              <a href="#">По рейтингу</a>
+            </li>
+          </ul>
+        </section>
+        <div class="increase-decrease">
+          <a href="#"><img src="#" width="11" height="10" alt="По возрастанию"></a>
+          <a href="#"><img src="#" width="11" height="10" alt="По убыванию"></a>
+        </div>
+      </div>
+      <div class="content">
+        <article class="content-items">
+          <img src="#" width="135" height="90" alt="Гостиница">
+          <h2>Amar resort & SPA</h2>
+          <p>Гостиница</p>
+          <p>От 4000 P.</p>
+          <a href="#" class="btn-detail">Подробнее</a>
+          <a href="#" class="btn-book">Забронировать</a>
+          <div class="rating">
+            <img src="#" width="89" height="17" alt="4 звезды">
+            <p>Рейтинг 8,5</p>
+          </div>
+        </article>
+        <article class="content-items">
+          <img src="#" width="135" height="90" alt="Мотель">
+          <h2>Desert quiail INN</h2>
+          <p>Мотель</p>
+          <p>От 3000 P.</p>
+          <a href="#" class="btn-detail">Подробнее</a>
+          <a href="#" class="btn-book">Забронировать</a>
+          <div class="rating">
+            <img src="#" width="64" height="17" alt="3 звезды">
+            <p>Рейтинг 8,9</p>
+          </div>
+        </article>
+        <article class="content-items">
+          <img src="#" width="135" height="90" alt="Апартаменты">
+          <h2>Villas at Poco diablo </h2>
+          <p>Апартаменты</p>
+          <p>От 2000 P.</p>
+          <a href="#" class="btn-detail">Подробнее</a>
+          <a href="#" class="btn-book">Забронировать</a>
+          <div class="rating">
+            <img src="#" width="42" height="17" alt="2 звезды">
+            <p>Рейтинг 9,2</p>
+          </div>
+        </article>
+      </div>
+    </main>
+    <footer class="main-footer">
+     <div class="container">
+       <div class="hashtag">
+         <a href="#"><b>#Visitsedona</b></a>
+       </div>
+       <div class="footer-social">
+         <a class="social-btn-vk" href="#">Вконтакте</a>
+         <a class="social-btn-fb" href="#">Фейсбук</a>
+         <a class="social-btn-inst" href="#">Инстаграм</a>
+       </div>
+       <div class="footer-copyright">
+         <p>Webside by</p>
+         <a href="#"><img src="http://logoHTML.png/113x39" width="113" height="39" alt="HTML Academy"></a>
+       </div>
+     </div>
+   </footer>
+  </body>
+</html>

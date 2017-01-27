@@ -5,120 +5,140 @@
     <title>Sedona</title>
   </head>
   <body>
-    <header class="main-header">
-      <div class="container">
-        <img src="http://logo.png/67x56" width="67" height="56" alt="Логотип">
-        <nav class="main-navigation">
-          <ul>
-            <li>
-              <a href="#">Информация</a>
-            </li>
-            <li>
-              <a href="#">Фото и видео</a>
-            </li>
-            <li>
-              <a href="#">Карта штата</a>
-            </li>
-            <li>
-              <a href="#">Гостиницы</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+    <header class="main-header">    
+      <img src="http://logo.png/67x56" width="67" height="56" alt="Логотип">
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="#">Информация</a>
+          </li>
+          <li>
+            <a href="#">Фото и видео</a>
+          </li>
+          <li>
+            <a href="#">Карта штата</a>
+          </li>
+          <li>
+            <a href="#">Гостиницы</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <main class="container">
-      <div class="slogan">
-        <img src="img/slogan.png" width="1200" height="800" alt="Sedona-Because the Grand Canion sucks">
-        <p><b>Седона — небольшой городок в Аризоне,<br>
-           Заслуживающий большего!</b></p>
-        <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    <div class="promo">
+      <img src="img/slogan.png" width="1200" height="800" alt="Sedona-Because the Grand Canion sucks">
+      <h1>Седона — небольшой городок в Аризоне,<br>
+           Заслуживающий большего!</h1>
+      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    </div>
+    <div class="features-holder">
+      <section class="features-row">
+        <div class="description">
+          <h2 class="white">Настоящий городок</h2>
+          <p class="white">-№1-</p>
+          <p class="white">Седона-не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <img src="#" width="800" height="256" alt="Красивый город Седона">
+      </section>
+      <section class="features-icon">
+        <div class="features-icon-item">
+          <img class="icon" src="#" width="75" height="72" alt="Дом">
+          <h2>Жилье</h2>
+          <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
+        </div>
+        <div class="features-icon-item">
+          <img class="icon" src="#" width="74" height="70" alt="Еда">
+          <h2>Еда</h2>
+          <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+        </div>
+        <div class="features-icon-item">
+          <img class="icon" src="#" width="64" height="76" alt="Подарок">
+          <h2>Сувениры</h2>
+          <p>Не только китайского, но и местного производства!</p>
+        </div>
+      </section>
+      <section class="features-row features-row-other" >
+        <div class="description">
+          <h2 class="white">Там есть мост дьявола</h2>
+          <p class="white">-№2-</p>
+          <p class="white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+        <img src="#" width="800" height="256" alt="Мост дьявола">
+      </section>
+      <section class="features-number">
+        <div class="features-number-item">
+          <h2>Небольшая площадь</h2>
+          <p>-№3-</p>
+          <p>Все достопримечательности находятся очень близко</p>
+        </div>
+        <div class="features-number-item">
+          <h2>Красивая дорога</h2>
+          <p>-№4-</p>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div class="features-number-item">
+          <h2>Мало туристов</h2>
+          <p>-№5-</p>
+          <p>Большинство едет в Гранд Каньон и толпится там</p>
+        </div>
+      </section>
+    </div>
+    <div class="suggestion">
+      <b class="question">Заинтересовались?</b>
+      <p>Укажите предполагаемые даты поездки,<br>
+          и мы покажем вам лучшие предложения гостиниц в Cедоне</p>
+      <form class="search-hotels" action="#" method="post">
+        <h2 class="white">Поиск гостиницы в Cедоне</h2>
+        <div class="date">
+          <label for="check-in">Дата заезда:</label>
+          <div class="date-row">
+            <input id="check-in" type="text" name="check-in-date" value="24 апреля 2017">
+            <img src="#" width="21" height="22" alt="календарь">
+          </div>
+        </div>
+        <div class="date">
+          <label for="check-out">Дата заезда:</label>
+          <div class="date-row">
+            <input id="check-out" type="text" name="check-out-date" value="4 июля 2017">
+            <img src="#" width="21" height="22" alt="календарь">
+          </div>
+        </div>
+        <div class="bottom-row">
+          <div class="guests">
+            <label for="adults">Взрослые:</label>
+            <div class="guests-row">
+              <img src="#" width="38" height="38" alt="плюс">
+              <input id="adults" type="text" name="number-adults" value="2">
+              <img src="#" width="38" height="38" alt="минус">
+            </div>
+          </div>
+          <div class="guests">
+            <label for="children">Дети:</label>
+            <div class="guests-row">
+              <img src="#" width="38" height="38" alt="плюс">
+              <input id="children" type="text" name="number-children" value="2">
+              <img src="#" width="38" height="38" alt="минус">
+            </div>
+          </div>
+        </div>
+        <a class="btn" href="#">Найти</a>
+      </form>
+      <div class="map">
+        <img src="#" width="1200" height="594" alt="карта">
       </div>
-      <div class="features">
-        <section class="features-with-img-left">
-          <div class="description">
-            <h2 class="white">Настоящий городок</h2>
-            <p class="white">-№1-</p>
-            <p class="white">Седона-не аттракцион для туристов, там течет своя жизнь</p>
-          </div>
-          <img src="#" width="800" height="256" alt="Красивый город Седона">
-        </section>
-        <section class="features-with-icon">
-          <div class="features-with-icon-item">
-            <img class="icon" src="#" width="75" height="72" alt="Дом">
-            <h2>Жилье</h2>
-            <p>Рекомендуем пожить в настоящем мотеле, все как в кино</p>
-          </div>
-          <div class="features-with-icon-item">
-            <img class="icon" src="#" width="74" height="70" alt="Еда">
-            <h2>Еда</h2>
-            <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
-          </div>
-          <div class="features-with-icon-item">
-            <img class="icon" src="#" width="64" height="76" alt="Подарок">
-            <h2>Сувениры</h2>
-            <p>Не только китайского, но и местного производства!</p>
-          </div>
-        </section>
-        <section class="features-with-img-right">
-          <img src="#" width="800" height="256" alt="Мост дьявола">
-          <div class="description">
-            <h2 class="white">Там есть мост дьявола</h2>
-            <p class="white">-№2-</p>
-            <p class="white">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-          </div>
-        </section>
-        <section class="features-with-number">
-          <div class="features-with-number-item">
-            <h2>Небольшая площадь</h2>
-            <p>-№3-</p>
-            <p>Все достопримечательности находятся очень близко</p>
-          </div>
-          <div class="features-with-number-item">
-            <h2>Красивая дорога</h2>
-            <p>-№4-</p>
-            <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
-          </div>
-          <div class="features-with-number-item">
-            <h2>Мало туристов</h2>
-            <p>-№5-</p>
-            <p>Большинство едет в Гранд Каньон и толпится там</p>
-          </div>
-        </section>
-      </div>
-      <div class="suggestion">
-        <h1>Заинтересовались?</h1>
-        <p>Укажите предполагаемые даты поездки,<br>
-          и мы покажем вам лучшие предложения гостиниц в седоне</p>
-         <div class="title">
-           <h2 class="white">Поиск гостиницы в Cедоне</h2>
-         </div>
-         <form class="search-hotels" action="#" method="post">
-           <label>Дата заезда:<input type="date" name="check-in-date" value="2017-04-24" max="2017-04-24" min="2017-10-24"></label>
-           <label>Дата выезда:<input type="date" name="check-out-date" value="2017-07-24" max="2017-04-24" min="2017-10-24"></label>
-           <label>Взрослые:<input type="number" name="adults" value="2"></label>
-           <label>Дети:<input type="number" name="children" value="0"></label>
-           <a class="btn" href="#">Найти</a>
-         </form>
-         <div class="map">
-           <img src="#" width="1200" height="594" alt="карта">
-         </div>
-       </div>
-    </main>
+    </div>
     <footer class="main-footer">
-     <div class="container">
-       <div class="hashtag">
-         <a href="#"><b>#Visitsedona</b></a>
-       </div>
-       <div class="footer-social">
-         <a class="social-btn-vk" href="#">Вконтакте</a>
-         <a class="social-btn-fb" href="#">Фейсбук</a>
-         <a class="social-btn-inst" href="#">Инстаграм</a>
-       </div>
-       <div class="footer-copyright">
-         <p>Webside by</p>
-         <a href="#"><img src="http://logoHTML.png/113x39" width="113" height="39" alt="HTML Academy"></a>
-       </div>
-     </div>
+      <div class="hashtag">
+        <a href="#">#Visitsedona</a>
+      </div>
+      <div class="footer-social">
+        <a class="social-btn-vk" href="#">Вконтакте</a>
+        <a class="social-btn-fb" href="#">Фейсбук</a>
+        <a class="social-btn-inst" href="#">Инстаграм</a>
+      </div>
+      <div class="footer-copyright">
+        <p>Webside by</p>
+        <a href="#"><img src="http://logoHTML.png/113x39" width="113" height="39" alt="HTML Academy"></a>
+      </div>
    </footer>
   </body>
 </html>

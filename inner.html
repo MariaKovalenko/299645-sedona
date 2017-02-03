@@ -7,8 +7,7 @@
   </head>
   <body>
     <header class="main-header">
-      <img src="img/main-logo.png" width="138" height="70" alt="Логотип">
-      <nav class="main-navigation">
+      <nav class="main-navigation-part-1">
         <ul>
           <li>
             <a href="#">Информация</a>
@@ -16,13 +15,18 @@
           <li>
             <a href="#">Фото и видео</a>
           </li>
-          <li>
-            <a href="#">Карта штата</a>
-          </li>
-          <li class="active">
-            <a href="#">Гостиницы</a>
-          </li>
         </ul>
+      </nav>
+        <img src="img/main-logo.png" width="138" height="70" alt="Логотип">
+        <nav class="main-navigation-part-2">
+          <ul>
+            <li>
+              <a href="#">Карта штата</a>
+            </li>
+            <li class="active">
+              <a href="#">Гостиницы</a>
+            </li>
+          </ul>
       </nav>
     </header>
     <form class="filters" action="#">
@@ -32,7 +36,7 @@
         <label><input type="checkbox">Парковка</label>
         <label><input type="checkbox">Wi-Fi</label>
       </div>
-      <div class="checkbox-left">
+      <div class="checkbox-right">
         <b class="label white">Тип жилья</b>
         <label><input type="checkbox" checked>Гостиница</label>
         <label><input type="checkbox" checked>Мотель</label>
@@ -54,8 +58,8 @@
           <span class="line-bold"></span>
           <span class="line-light"></span>
         </div>
+        <input type="submit" value="Показать">
       </div>
-      <input type="submit" value="Показать">
     </form>
     <div class="result">
       <b>Найдено 3</b>

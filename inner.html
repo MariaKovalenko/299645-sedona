@@ -4,153 +4,159 @@
     <meta charset="utf-8">
     <title>Sedona</title>
     <link href="css/style.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-navigation-part-1">
-        <ul>
-          <li>
-            <a href="#">Информация</a>
-          </li>
-          <li>
-            <a href="#">Фото и видео</a>
-          </li>
-        </ul>
-      </nav>
-        <img src="img/main-logo.png" width="138" height="70" alt="Логотип">
-        <nav class="main-navigation-part-2">
+    <div class="wrapper">
+      <header class="main-header">
+        <nav class="main-navigation">
+          <div class="main-navigation-part-1">
+            <ul>
+              <li>
+                <a href="#">Информация</a>
+              </li>
+              <li>
+                <a href="#">Фото и видео</a>
+              </li>
+            </ul>
+          </div>
+          <img src="img/main-logo.png" width="138" height="70" alt="Логотип">
+          <div class="main-navigation-part-2">
+            <ul>
+              <li>
+                <a href="#">Карта штата</a>
+              </li>
+              <li class="active">
+                <a href="#">Гостиницы</a>
+              </li>
+             </ul>
+          </div>
+        </nav>
+      </header>
+      <form class="filters" action="#">
+        <div class="checkbox-left">
+          <b class="label white">Инфраструктура:</b>
+          <label><input type="checkbox" checked>Бассейн</label>
+          <label><input type="checkbox">Парковка</label>
+          <label><input type="checkbox">Wi-Fi</label>
+        </div>
+        <div class="checkbox-right">
+          <b class="label white">Тип жилья</b>
+          <label><input type="checkbox" checked>Гостиница</label>
+          <label><input type="checkbox" checked>Мотель</label>
+          <label><input type="checkbox" checked>Апартаменты</label>
+        </div>
+        <div class="range">
+          <b class="label white">Стоимость в сутки(Р):</b>
+          <div class="border">
+            <span class="white">От 0</span>
+            <span class="white">До 3000</span>
+          </div>
+          <div class="runner">
+            <span class="sicle-start">
+              <span class="sicl-start-add"></span>
+            </span>
+            <span class="sicle-end">
+              <span class="sicl-end-add"></span>
+            </span>
+            <span class="line-bold"></span>
+            <span class="line-light"></span>
+          </div>
+          <input type="submit" value="Показать">
+        </div>
+      </form>
+      <div class="result">
+        <b>Найдено 3</b>
+        <section class="sorting">
+          <span class="sort">Сортировка:</span>
           <ul>
-            <li>
-              <a href="#">Карта штата</a>
+            <li class="current">
+              <a href="#">По цене</a>
             </li>
-            <li class="active">
-              <a href="#">Гостиницы</a>
+            <li>
+              <a href="#">По типу</a>
+            </li>
+            <li>
+              <a href="#">По рейтингу</a>
             </li>
           </ul>
-      </nav>
-    </header>
-    <form class="filters" action="#">
-      <div class="checkbox-left">
-        <b class="label white">Инфраструктура:</b>
-        <label><input type="checkbox" checked>Бассейн</label>
-        <label><input type="checkbox">Парковка</label>
-        <label><input type="checkbox">Wi-Fi</label>
-      </div>
-      <div class="checkbox-right">
-        <b class="label white">Тип жилья</b>
-        <label><input type="checkbox" checked>Гостиница</label>
-        <label><input type="checkbox" checked>Мотель</label>
-        <label><input type="checkbox" checked>Апартаменты</label>
-      </div>
-      <div class="range">
-        <b class="label white">Стоимость в сутки(Р):</b>
-        <div class="border">
-          <span class="white">От 0</span>
-          <span class="white">До 3000</span>
+        </section>
+        <div class="increase-decrease">
+          <a href="#"><img src="img/increase-icon.png" width="11" height="10" alt="По возрастанию"></a>
+          <a href="#"><img src="img/decrease-icon.png" width="11" height="10" alt="По убыванию"></a>
         </div>
-        <div class="runner">
-          <span class="sicle-start">
-            <span class="sicl-start-add"></span>
-          </span>
-          <span class="sicle-end">
-            <span class="sicl-end-add"></span>
-          </span>
-          <span class="line-bold"></span>
-          <span class="line-light"></span>
-        </div>
-        <input type="submit" value="Показать">
       </div>
-    </form>
-    <div class="result">
-      <b>Найдено 3</b>
-      <section class="sorting">
-        <span class="sort">Сортировка:</span>
-        <ul>
-          <li class="current">
-            <a href="#">По цене</a>
-          </li>
-          <li>
-            <a href="#">По типу</a>
-          </li>
-          <li>
-            <a href="#">По рейтингу</a>
-          </li>
-        </ul>
-      </section>
-      <div class="increase-decrease">
-        <a href="#"><img src="img/increase-icon.png" width="11" height="10" alt="По возрастанию"></a>
-        <a href="#"><img src="img/decrease-icon.png" width="11" height="10" alt="По убыванию"></a>
+      <div class="content">
+        <article class="content-items">
+          <img src="img/amara-resort.jpg" width="135" height="90" alt="Гостиница">
+          <div class="holder">
+            <b>Amar resort &amp; SPA</b>
+            <div class="price-row">
+              <span>Гостиница</span>
+              <span>От 4000 P.</span>
+            </div>
+            <div class="btn-group">
+              <a href="#" class="btn-detail">Подробнее</a>
+              <a href="#" class="btn-book">Забронировать</a>
+            </div>
+          </div>
+          <div class="rating">
+            <img src="img/4-star.png" width="89" height="17" alt="4 звезды">
+            <span>Рейтинг 8,5</span>
+          </div>
+        </article>
+        <article class="content-items">
+          <img src="img/desert-quail.jpg" width="135" height="90" alt="Мотель">
+          <div class="holder">
+            <b>Desert quiail INN</b>
+            <div class="price-row">
+              <span>Мотель</span>
+              <span>От 3000 P.</span>
+            </div>
+            <div class="btn-group">
+              <a href="#" class="btn-detail">Подробнее</a>
+              <a href="#" class="btn-book">Забронировать</a>
+            </div>
+          </div>
+          <div class="rating">
+            <img src="img/3-star.png" width="65" height="17" alt="3 звезды">
+            <span>Рейтинг 8,9</span>
+          </div>
+        </article>
+        <article class="content-items">
+          <img src="img/villas-poco.jpg" width="135" height="90" alt="Апартаменты">
+          <div class="holder">
+            <b>Villas at Poco diablo </b>
+            <div class="price-row">
+              <span>Апартаменты</span>
+              <span>От 2000 P.</span>
+            </div>
+            <div class="btn-group">
+              <a href="#" class="btn-detail">Подробнее</a>
+              <a href="#" class="btn-book">Забронировать</a>
+            </div>
+          </div>
+          <div class="rating">
+            <img src="img/2-star.png" width="42" height="17" alt="2 звезды">
+            <span>Рейтинг 9,2</span>
+          </div>
+        </article>
       </div>
+      <footer class="main-footer">
+       <div class="hashtag">
+         <a href="#"><b>#Visitsedona</b></a>
+       </div>
+       <div class="footer-social">
+         <a class="social-btn-vk" href="#">Вконтакте</a>
+         <a class="social-btn-fb" href="#">Фейсбук</a>
+         <a class="social-btn-inst" href="#">Инстаграм</a>
+       </div>
+       <div class="footer-copyright">
+         <p>Webside by</p>
+         <a href="#"><img src="img/html-icon.png" width="113" height="39" alt="HTML Academy"></a>
+       </div>
+      </footer>
     </div>
-    <div class="content">
-      <article class="content-items">
-        <img src="img/amara-resort.jpg" width="135" height="90" alt="Гостиница">
-        <div class="holder">
-          <b>Amar resort &amp; SPA</b>
-          <div class="price-row">
-            <span>Гостиница</span>
-            <span>От 4000 P.</span>
-          </div>
-          <div class="btn-group">
-            <a href="#" class="btn-detail">Подробнее</a>
-            <a href="#" class="btn-book">Забронировать</a>
-          </div>
-        </div>
-        <div class="rating">
-          <img src="img/4-star.png" width="89" height="17" alt="4 звезды">
-          <span>Рейтинг 8,5</span>
-        </div>
-      </article>
-      <article class="content-items">
-        <img src="img/desert-quail.jpg" width="135" height="90" alt="Мотель">
-        <div class="holder">
-          <b>Desert quiail INN</b>
-          <div class="price-row">
-            <span>Мотель</span>
-            <span>От 3000 P.</span>
-          </div>
-          <div class="btn-group">
-            <a href="#" class="btn-detail">Подробнее</a>
-            <a href="#" class="btn-book">Забронировать</a>
-          </div>
-        </div>
-        <div class="rating">
-          <img src="img/3-star.png" width="65" height="17" alt="3 звезды">
-          <span>Рейтинг 8,9</span>
-        </div>
-      </article>
-      <article class="content-items">
-        <img src="img/villas-poco.jpg" width="135" height="90" alt="Апартаменты">
-        <div class="holder">
-          <b>Villas at Poco diablo </b>
-          <div class="price-row">
-            <span>Апартаменты</span>
-            <span>От 2000 P.</span>
-          </div>
-          <div class="btn-group">
-            <a href="#" class="btn-detail">Подробнее</a>
-            <a href="#" class="btn-book">Забронировать</a>
-          </div>
-        </div>
-        <div class="rating">
-          <img src="img/2-star.png" width="42" height="17" alt="2 звезды">
-          <span>Рейтинг 9,2</span>
-        </div>
-      </article>
-    </div>
-    <footer class="main-footer">
-     <div class="hashtag">
-       <a href="#"><b>#Visitsedona</b></a>
-     </div>
-     <div class="footer-social">
-       <a class="social-btn-vk" href="#">Вконтакте</a>
-       <a class="social-btn-fb" href="#">Фейсбук</a>
-       <a class="social-btn-inst" href="#">Инстаграм</a>
-     </div>
-     <div class="footer-copyright">
-       <p>Webside by</p>
-       <a href="#"><img src="img/html-icon.png" width="113" height="39" alt="HTML Academy"></a>
-     </div>
-    </footer>
   </body>
 </html>

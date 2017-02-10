@@ -37,18 +37,18 @@
       <form class="filters" action="#">
         <div class="checkbox-left">
           <b class="label white">Инфраструктура:</b>
-          <label><input type="checkbox" checked>Бассейн</label>
-          <label><input type="checkbox">Парковка</label>
-          <label><input type="checkbox">Wi-Fi</label>
+          <label class="box checked"><input type="checkbox" checked>Бассейн</label>
+          <label class="box"><input type="checkbox">Парковка</label>
+          <label class="box"><input type="checkbox">Wi-Fi</label>
         </div>
         <div class="checkbox-right">
           <b class="label white">Тип жилья</b>
-          <label><input type="checkbox" checked>Гостиница</label>
-          <label><input type="checkbox" checked>Мотель</label>
-          <label><input type="checkbox" checked>Апартаменты</label>
+          <label class="box checked"><input type="checkbox" checked>Гостиница</label>
+          <label class="box checked"><input type="checkbox" checked>Мотель</label>
+          <label class="box checked"><input type="checkbox" checked>Апартаменты</label>
         </div>
         <div class="range">
-          <b class="label white">Стоимость в сутки(Р):</b>
+          <b class="label white">Стоимость в сутки (Р):</b>
           <div class="border">
             <span class="white">От 0</span>
             <span class="white">До 3000</span>
@@ -63,11 +63,11 @@
             <span class="line-bold"></span>
             <span class="line-light"></span>
           </div>
-          <input type="submit" value="Показать">
+          <input class="runner-btn" type="submit" value="Показать">
         </div>
       </form>
       <div class="result">
-        <b>Найдено 3</b>
+        <b>Найдено: 3</b>
         <section class="sorting">
           <span class="sort">Сортировка:</span>
           <ul>
@@ -83,15 +83,15 @@
           </ul>
         </section>
         <div class="increase-decrease">
-          <a href="#"><img src="img/increase-icon.png" width="11" height="10" alt="По возрастанию"></a>
-          <a href="#"><img src="img/decrease-icon.png" width="11" height="10" alt="По убыванию"></a>
+          <a class="increase" href="#">По возрастанию</a>
+          <a class="decrease" href="#">По убыванию</a>
         </div>
       </div>
       <div class="content">
         <article class="content-items">
           <img src="img/amara-resort.jpg" width="135" height="90" alt="Гостиница">
           <div class="holder">
-            <b>Amar resort &amp; SPA</b>
+            <a class="hotel-name">Amara resort &amp; SPA</a>
             <div class="price-row">
               <span>Гостиница</span>
               <span>От 4000 P.</span>
@@ -109,7 +109,7 @@
         <article class="content-items">
           <img src="img/desert-quail.jpg" width="135" height="90" alt="Мотель">
           <div class="holder">
-            <b>Desert quiail INN</b>
+            <a class="hotel-name">Desert quiail INN</a>
             <div class="price-row">
               <span>Мотель</span>
               <span>От 3000 P.</span>
@@ -127,7 +127,7 @@
         <article class="content-items">
           <img src="img/villas-poco.jpg" width="135" height="90" alt="Апартаменты">
           <div class="holder">
-            <b>Villas at Poco diablo </b>
+            <a class="hotel-name">Villas at Poco diablo </a>
             <div class="price-row">
               <span>Апартаменты</span>
               <span>От 2000 P.</span>
@@ -148,13 +148,15 @@
          <a href="#"><b>#Visitsedona</b></a>
        </div>
        <div class="footer-social">
-         <a class="social-btn-vk" href="#">Вконтакте</a>
-         <a class="social-btn-fb" href="#">Фейсбук</a>
-         <a class="social-btn-inst" href="#">Инстаграм</a>
+         <a class="social-btn social-btn-tv" href="#">Вконтакте</a>
+         <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+         <a class="social-btn social-btn-yt" href="#">Инстаграм</a>
        </div>
        <div class="footer-copyright">
-         <p>Webside by</p>
-         <a href="#"><img src="img/html-icon.png" width="113" height="39" alt="HTML Academy"></a>
+         <div class="footer-copyright-caption">
+           <p>Webside by</p>
+         </div>
+         <a href="#">HTML Academy</a>
        </div>
       </footer>
     </div>

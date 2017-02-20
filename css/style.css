@@ -25,20 +25,14 @@ body {
 }
 .main-header {
   display: flex;
-  position: relative;
   min-height: 56px;
 }
 .main-navigation {
   display: flex;
+  position: relative;
   padding-left: 72px;
   padding-right: 72px;
   width: 100%;
-}
-.main-header img {
-  position: absolute;
-  top: 0;
-  left: 50%;
-  margin-left: -69px;
 }
 .main-navigation {
   min-height: 56px;
@@ -70,11 +64,18 @@ body {
   font-weight: bold;
   color: #000;
 }
+.main-navigation .logo {
+  width: 0px;
+  padding: 0 0;
+}
+.main-navigation img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -69px;
+}
 .active {
   color: #766357;
-}
-.main-navigation-part-2 a {
-  text-align: right;
 }
 .main-navigation a:hover {
   color: #81b3d2;
@@ -397,11 +398,16 @@ body {
   width: 180px;
   height: 46px;
   color: #fff;
-  padding-left: 26px;
+  padding-left: 39px;
 }
-.box::before {
+.checkbox-left input[type="checkbox"] {
+  display: none;
+}
+.checkbox-right input[type="checkbox"] {
+  display: none;
+}
+.box .checkbox-indicator {
   position: absolute;
-  content: " ";
   top: 0px;
   left: 0px;
   width: 26px;
@@ -409,9 +415,8 @@ body {
   background: url("../img/checkbox.png") no-repeat center;
   background-position: 0px 0px;
 }
-.box-checked::before {
+.box-checked .checkbox-indicator {
   position: absolute;
-  content: " ";
   top: 0px;
   left: 0px;
   width: 26px;
@@ -419,16 +424,18 @@ body {
   background: url("../img/checkbox-checked.png") no-repeat center;
   background-position: 0px 0px;
 }
-.checkbox-left input {
-  visibility: hidden;
+.box input:checked + .checkbox-indicator {
+  background: url("../img/checkbox-checked.png") no-repeat center;
+  background-position: 0px 0px;
 }
+/*.box-checked input:checked + .checkbox-indicator {
+  background: url("../img/checkbox.png") no-repeat center;
+  background-position: 0px 0px;
+}*/
 .checkbox-right {
   width: 180px;
   margin-left: 74px;
   padding-top: 28px;
-}
-.checkbox-right input {
-  visibility: hidden;
 }
 .checkbox-right b {
   display: block;
@@ -441,7 +448,7 @@ body {
   display: block;
   height: 46px;
   color: #fff;
-  padding-left: 30px;
+  padding-left: 41px;
 }
 .range {
   width: 399px;

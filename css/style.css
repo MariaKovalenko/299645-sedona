@@ -400,10 +400,7 @@ body {
   color: #fff;
   padding-left: 39px;
 }
-.checkbox-left input[type="checkbox"] {
-  display: none;
-}
-.checkbox-right input[type="checkbox"] {
+.filters input[type="checkbox"] {
   display: none;
 }
 .box .checkbox-indicator {
@@ -415,23 +412,10 @@ body {
   background: url("../img/checkbox.png") no-repeat center;
   background-position: 0px 0px;
 }
-.box-checked .checkbox-indicator {
-  position: absolute;
-  top: 0px;
-  left: 0px;
-  width: 26px;
-  height: 22px;
-  background: url("../img/checkbox-checked.png") no-repeat center;
-  background-position: 0px 0px;
-}
 .box input:checked + .checkbox-indicator {
   background: url("../img/checkbox-checked.png") no-repeat center;
   background-position: 0px 0px;
 }
-/*.box-checked input:checked + .checkbox-indicator {
-  background: url("../img/checkbox.png") no-repeat center;
-  background-position: 0px 0px;
-}*/
 .checkbox-right {
   width: 180px;
   margin-left: 74px;
@@ -846,39 +830,39 @@ body {
 }
 .social-btn-tv {
   background: #81b3d2 url("../img/t.png") no-repeat center;
-  background-position: 15px 17px;
+  background-position: 0px 0px;
 }
 .social-btn-fb {
   background: #81b3d2 url("../img/f.png") no-repeat center;
-  background-position: 18px 13px;
+  background-position: 0px 0px;
 }
 .social-btn-yt {
   background: #81b3d2 url("../img/y.png") no-repeat center;
-  background-position: 13px 16px;
+  background-position: 0px 0px;
 }
 .social-btn-tv:hover {
-  background: #669ec0 url("../img/t.png") no-repeat center;
-  background-position: 15px 17px;
+  background: #669ec0 url("../img/t-hover.png") no-repeat center;
+  background-position: 0px 0px;
 }
 .social-btn-fb:hover {
-  background: #669ec0 url("../img/f.png") no-repeat center;
-  background-position: 18px 13px;
+  background: #669ec0 url("../img/f-hover.png") no-repeat center;
+  background-position: 0px 0px;
 }
 .social-btn-yt:hover {
-  background: #669ec0 url("../img/y.png") no-repeat center;
-  background-position: 13px 16px;
+  background: #669ec0 url("../img/y-hover.png") no-repeat center;
+  background-position: 0px 0px;
 }
 .social-btn-tv:active {
-  background: #5496bd url("../img/t.png") no-repeat center;
-  background-position: 15px 17px;
+  background: #5496bd url("../img/t-active.png") no-repeat center;
+  background-position: 0px 0px;
 }
 .social-btn-fb:active {
-  background: #5496bd url("../img/f.png") no-repeat center;
-  background-position: 18px 13px;
+  background: #5496bd url("../img/f-active.png") no-repeat center;
+  background-position: 0px 0px;
 }
 .social-btn-yt:active {
-  background: #5496bd url("../img/y.png") no-repeat center;
-  background-position: 13px 16px;
+  background: #5496bd url("../img/y-active.png") no-repeat center;
+  background-position: 0px 0px;
 }
 .footer-copyright {
   display: flex;

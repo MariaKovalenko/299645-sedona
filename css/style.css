@@ -21,30 +21,27 @@ body {
 .wrapper {
   width: 1200px;
   margin: 0 auto;
+  box-shadow: 0 7px 30px 0 rgba(0,0,0,0.2);
 }
 .main-header {
   display: flex;
+  position: relative;
   min-height: 56px;
 }
 .main-navigation {
   display: flex;
-  position: relative;
   padding-left: 72px;
-  padding-right: 73px;
+  padding-right: 72px;
   width: 100%;
 }
-.main-navigation img {
+.main-header img {
   position: absolute;
   top: 0;
   left: 50%;
   margin-left: -69px;
 }
-.main-navigation-part-1 {
+.main-navigation {
   min-height: 56px;
-}
-.main-navigation-part-2 {
-  min-height: 56px;
-  margin-left: auto;
 }
 .main-navigation ul {
   margin: 0;
@@ -57,6 +54,13 @@ body {
   font-size: 14px;
   line-height: 26px;
   vertical-align: top;
+}
+.main-navigation li:nth-child(3) {
+  text-align: right;
+  margin-left: 96px;
+}
+.main-navigation li:nth-child(4) {
+  text-align: right;
 }
 .main-navigation a {
   display: block;
@@ -298,7 +302,7 @@ body {
   width: 38px;
   height: 38px;
   top: 0px;
-  right: 39px;
+  right: 38px;
   background: #f2f2f2 url("../img/minus-icon.png") no-repeat center;
   background-position: 0px 0px;
 }
@@ -352,6 +356,7 @@ body {
   font-size: 21px;
   line-height: 26px;
   margin-top: 54px;
+  font-weight: bold;
 }
 .search-hotels-btn:hover {
   background-color: #669ec0;
@@ -754,6 +759,7 @@ body {
   background-color: #81b3d2;
   font-size: 14px;
   line-height: 21px;
+  font-weight: bold;
 }
 .btn-detail:hover {
   background-color: #669ec0;
@@ -767,6 +773,7 @@ body {
   font-size: 14px;
   line-height: 21px;
   margin-left: 2px;
+  font-weight: bold;
 }
 .btn-book:hover {
   background-color: #604e43;

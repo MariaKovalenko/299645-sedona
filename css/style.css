@@ -650,10 +650,9 @@ body {
   top: 15px;
   left: 0px;
 }
-.sorting a::after:focus {
+.sorting a:focus::after {
   content: " ";
   display: none;;
-  position: absolute;
 }
 .sorting .current a::after {
   content: " ";

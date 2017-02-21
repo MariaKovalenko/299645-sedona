@@ -219,9 +219,9 @@ body {
 .date input {
   font-size: 14px;
   line-height: 26px;
-  padding-top: 7px;
-  padding-bottom: 6px;
-  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 4px;
+  padding-left: 11px;
   width: 333px;
   font-family: "PT Sans", "Arial", sans-serif;
   color: #000000;
@@ -229,6 +229,7 @@ body {
   font-weight: bold;
   background-color: #f2f2f2;
   border: 0px;
+  border: 2px solid transparent;
 }
 .date input:hover {
   background-color: #ebebeb;
@@ -414,6 +415,14 @@ body {
 }
 .box input:checked + .checkbox-indicator {
   background: url("../img/checkbox-checked.png") no-repeat center;
+  background-position: 0px 0px;
+}
+.box input:disabled + .checkbox-indicator {
+  background: url("../img/checkbox-disabled.png") no-repeat center;
+  background-position: 0px 0px;
+}
+.box input:checked:disabled + .checkbox-indicator {
+  background: url("../img/checkbox-checked-disabled.png") no-repeat center;
   background-position: 0px 0px;
 }
 .checkbox-right {
@@ -641,6 +650,11 @@ body {
   top: 15px;
   left: 0px;
 }
+.sorting a::after:focus {
+  content: " ";
+  display: none;;
+  position: absolute;
+}
 .sorting .current a::after {
   content: " ";
   display: none;
@@ -651,6 +665,9 @@ body {
 .sorting a:active {
   color: #000;
   text-decoration: none;
+}
+.sorting .current a:active {
+  color: #81b3d2;
 }
 .increase-decrease {
   width: 60px;
@@ -710,12 +727,11 @@ body {
   margin-bottom: 0px;
 }
 .holder {
-  width: 259px;
+  max-width: 600px;
   margin-left: 29px;
 }
 .hotel-name {
   display: block;
-  width: 240px;
   font-size: 21px;
   line-height: 26px;
   font-weight: bold;
